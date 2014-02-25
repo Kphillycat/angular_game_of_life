@@ -12,7 +12,7 @@ module Gol
     
     @@da_world = World.new
     @game = Set_up.new(@@da_world)
-    @game.random_formation
+    @game.pulsar
 
     #configure
     configure do
