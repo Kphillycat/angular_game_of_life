@@ -10,8 +10,9 @@ gameOfLifeControllers.controller('gameOfLifeCtrl', ['$scope','$http',
         });
     };
 
-    $scope.getBoard();
-
+    setInterval(function(){
+      $scope.getBoard();
+    }, 1000);
 }]);
 
 

@@ -1,7 +1,7 @@
 <div class="board">
-  <div class="row" ng-repeat="row in board[0] track by $index">
-    <div class="cell-container" ng-repeat="cell in row track by $index">
-      <div class="cell {{cell}}"></div>
+  <div class="cell-row" ng-repeat="row in board track by $index">
+    <div class="one-cell" ng-repeat="cell in row track by $index">
+      <div class="celly {{cell}}"> </div>
     </div>
   </div>
 </div>
