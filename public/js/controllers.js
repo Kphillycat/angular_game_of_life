@@ -12,7 +12,7 @@ gameOfLifeControllers.controller('gameOfLifeCtrl', ['$scope','$http',
 
     setInterval(function(){
       $scope.getBoard();
-    }, 1000);
+    }, 11);
 }]);
 
 

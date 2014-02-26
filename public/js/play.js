@@ -8,6 +8,6 @@ $(document).ready(function(){
     $(".false").each(function(){
       $(this).addClass("dead")
     });
-  },1000);
+  },11);
     
 });
