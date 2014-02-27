@@ -11,8 +11,8 @@ module Gol
   class App < Sinatra::Application
     #set up world
     @@da_world = World.new
-    @game = Set_up.new(@@da_world)
-    @game.pulsar
+    @@game = Set_up.new(@@da_world)
+    # @@game.pulsar
 
     #configure
     configure do
@@ -26,7 +26,7 @@ module Gol
     end
 
     get '/gol' do
-      # @game.blinker
+      @@game.send("blinker")
       @cur_world = @@da_world      
       @@da_world.tick!
       @@da_world.display.to_json
