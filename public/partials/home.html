@@ -4,19 +4,23 @@
   </div>
 </div>
 <div class="row">
-  <div class="panel">
+  <!-- <div class="panel"> -->
     <div class="flex-video">
       <iframe width="420" height="315" src="//www.youtube.com/embed/58wJRrvVgZI" frameborder="0" allowfullscreen></iframe>
     </div>
-  </div>
+  <!-- </div> -->
 </div>
 <div class="row">
   <div class="large-4 columns">
-    <a href="#/play/pulsar" class="medium success button expand play">Play</a>
+    <a href="#/play/{{orderProp}}" class="medium success button expand play">Play</a>
   </div>
   <div class="large-8 columns">
-    <select>
+    <select ng-model="orderProp">
       <option value="pulsar">Pulsar</option>
+      <option value="blinker">Blinker</option>
+      <option value="toad">Toad</option>
+      <option value="beacon">Beacon</option>
+      <option value="random_formation">I'm feelin' lucky</option>
     </select>
   </div>
 </div>

@@ -15,10 +15,7 @@ gameOfLifeControllers.controller('gameOfLifeCtrl', ['$scope','$http',
             $scope.getBoard();
           }, 11);
     }
-
-    }
-
-   
+    }   
 }]);
 
 gameOfLifeControllers.controller('gameOfLifeForCtrl', ['$scope','$http','$routeParams',
@@ -28,6 +25,13 @@ gameOfLifeControllers.controller('gameOfLifeForCtrl', ['$scope','$http','$routeP
            $scope.board = data;
         });
   }
+
+   $scope.play = function(){ 
+          console.log("playing!");
+          setInterval(function(){
+            $scope.getBoard();
+          }, 11);
+    }
 }]);
  
 
