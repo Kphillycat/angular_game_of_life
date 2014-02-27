@@ -8,11 +8,17 @@ gameOfLifeControllers.controller('gameOfLifeCtrl', ['$scope','$http',
       $http.get('http://localhost:9292/gol').success(function(data, status, headers, config) {
           $scope.board = data;
         });
-    };
+    
+    $scope.play = function(){ 
+          console.log("playing!");
+          setInterval(function(){
+            $scope.getBoard();
+          }, 11);
+    }
 
-    setInterval(function(){
-      $scope.getBoard();
-    }, 11);
+    }
+
+   
 }]);
 
 
