@@ -9,5 +9,9 @@ $(document).ready(function(){
       $(this).addClass("dead")
     });
   },11);
+
+  $("#start-game").on("click",function(){
+    $(this).hide();
+  });
     
 });

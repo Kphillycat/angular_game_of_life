@@ -1,7 +1,3 @@
-.cell-row{
-
-}
-
 .one-cell{
   display: inline-block;
 
@@ -22,4 +18,22 @@
 
 .alive{
   background-color: blue;
+}
+
+iframe{
+  display: block;
+  margin: 0 auto;
+}
+
+.play{
+  margin: 10px auto;
+}
+
+.formations{
+  margin: 20px auto;
+}
+
+.container{
+  display: block;
+  margin: 0 auto;
 }

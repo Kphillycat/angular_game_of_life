@@ -1,10 +1,11 @@
-<h1>LIFE!!!!</h1>
-<div class="board">
-  <div class="cell-row" ng-repeat="row in board track by $index">
-    <div class="one-cell" ng-repeat="cell in row track by $index">
-      <div class="celly {{cell}}"> </div>
+<div class="container">
+  <h1>LIFE!!!!</h1>
+  <div class="board">
+    <div class="cell-row" ng-repeat="row in board track by $index">
+      <div class="one-cell" ng-repeat="cell in row track by $index">
+        <div class="celly {{cell}}"> </div>
+      </div>
     </div>
   </div>
+  <button id="start-game" ng-click="getBoard(); play();">Let it BEGAN!</button>
 </div>
-<!-- <button id="start-game" ng-click="getBoard()">Anotha!</button> -->
-<button id="start-game" ng-click="getBoard(); play();">Let it BEGAN!</button>
