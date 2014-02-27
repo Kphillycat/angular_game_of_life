@@ -10,7 +10,10 @@ gameOfLifeApp.config(['$routeProvider', function($routeProvider){
 	}).when("/play",{
 			templateUrl: "partials/play.html",
 			controller: "gameOfLifeCtrl"
-	}).otherwise({redirectTo: "/"});
+	}).when("/play/:formation",{
+      templateUrl: "partials/play.html",
+      controller: "gameOfLifeForCtrl"
+  }).otherwise({redirectTo: "/"});
 
 }]);
 

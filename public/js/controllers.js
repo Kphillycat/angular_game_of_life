@@ -21,7 +21,15 @@ gameOfLifeControllers.controller('gameOfLifeCtrl', ['$scope','$http',
    
 }]);
 
-
+gameOfLifeControllers.controller('gameOfLifeForCtrl', ['$scope','$http','$routeParams',
+  function($scope, $http, $routeParams){
+    $scope.getBoard = function(){
+      $http.get('http://localhost:9292/gol/' + $routeParams.formation).success(function(data){
+           $scope.board = data;
+        });
+  }
+}]);
+ 
 
 
 

@@ -1,6 +1,5 @@
 require 'bundler'
 Bundler.require
-require 'debugger'
 
 Dir.glob('./lib/*.rb') do |model|
   require model
@@ -26,11 +25,18 @@ module Gol
     end
 
     get '/gol' do
-      @@game.send("blinker")
+      @@game.send("pulsar")
       @cur_world = @@da_world      
       @@da_world.tick!
       @@da_world.display.to_json
       # @cur_world.json
+    end
+
+    get '/gol/:formation' do
+      @@game.send(params[:formation])
+      @cur_world = @@da_world      
+      @@da_world.tick!
+      @@da_world.display.to_json
     end
 
     get '/custom.css' do
