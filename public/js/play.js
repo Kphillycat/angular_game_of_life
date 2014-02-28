@@ -10,8 +10,13 @@ $(document).ready(function(){
     });
   },11);
 
-  $("#start-game").on("click",function(){
-    $(this).hide();
-  });
+  setTimeout(function(){
+    $("#start-game").on("click",function(){
+      $(this).hide();
+    });
+  },1000);
+ 
+
+  
     
 });
