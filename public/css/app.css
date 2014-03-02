@@ -1,3 +1,15 @@
+@import url(http://fonts.googleapis.com/css?family=Lilita+One);
+
+text{
+  font-family: 'Lilita One', cursive;
+}
+
+body{
+  /*background-color: Crimson;*/
+/*  font-family: 'Lilita One', cursive;
+  background: -webkit-radial-gradient(circle, rgb(220, 20, 60) 60%, rgb(223,  194, 156));
+*/}
+
 .one-cell{
   display: inline-block;
 

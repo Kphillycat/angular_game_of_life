@@ -10,18 +10,18 @@ $(document).ready(function(){
     });
   },11);
 
-  setTimeout(function(e){
+  setTimeout(function(){
     $("#start-game").on("click",function(){
       $(this).hide();
-      onKEEF();
+      battleMusic();
     });
-  },1000);
+  },100);
   
     
 });
 
  var player;
- function onKEEF() {
+ function battleMusic() {
   
   player = new YT.Player('player', {
     width: 420,
