@@ -13,10 +13,35 @@ $(document).ready(function(){
   setTimeout(function(){
     $("#start-game").on("click",function(){
       $(this).hide();
+
     });
   },1000);
- 
-
+  
   
     
 });
+
+ var player;
+ function onYouTubeIframeAPIReady() {
+  
+  player = new YT.Player('player', {
+    width: 420,
+    height: 315,
+    videoId: '_dnZHea_TI0',
+    events: {
+      'onReady': onPlayerReady    
+    }
+  });
+ }
+
+  //Set up youtube
+  var tag = document.createElement('script');
+
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+ 
+  function onPlayerReady(event) {
+    event.target.setVolume(50);
+    event.target.playVideo();
+  } 
