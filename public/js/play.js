@@ -15,7 +15,7 @@ $(document).ready(function(){
       $(this).hide();
       battleMusic();
     });
-  },100);
+  },1100);
   
     
 });
