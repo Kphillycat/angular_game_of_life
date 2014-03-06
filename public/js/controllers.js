@@ -8,13 +8,16 @@ gameOfLifeControllers.controller('gameOfLifeCtrl', ['$scope','$http',
       $http.get('/gol').success(function(data, status, headers, config) {
           $scope.board = data;
         });
+
     
     $scope.play = function(){ 
           setInterval(function(){
             $scope.getBoard();
           }, 11);
     }
-    }   
+    } 
+  $scope.orderProp = "pulsar";
+  
 }]);
 
 gameOfLifeControllers.controller('gameOfLifeForCtrl', ['$scope','$http','$routeParams',

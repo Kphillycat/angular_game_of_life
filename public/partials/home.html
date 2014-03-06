@@ -8,12 +8,14 @@
     <a href="#/play/{{orderProp}}" class="medium success button expand play">Play</a>
   </div>
   <div class="large-8 columns">
-    <select class="formations" ng-model="orderProp">
+    <select id="selection" class="formations" ng-model="orderProp">
       <option value="pulsar">Pulsar</option>
       <option value="blinker">Blinker</option>
       <option value="toad">Toad</option>
       <option value="beacon">Beacon</option>
       <option value="random_formation">I'm feelin' lucky</option>
     </select>
+    <label for="selection"><h3>Pick a Formation above then press Play</h3></label>
+
   </div>
 </div>
